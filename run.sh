@@ -21,4 +21,7 @@ if [ ! -f /data/db/.mongodb_password_set ]; then
     /set_mongodb_password.sh
 fi
 
+# 启动定时任务
+cron -f
+
 fg

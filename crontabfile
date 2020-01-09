@@ -1,0 +1,5 @@
+# m h  dom mon dow command
+
+*/1 * * * * /bin/echo 'date' > /dev/console
+
+*/1 * * * * /bin/sh /home/mongodb_back.sh
