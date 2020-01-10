@@ -2,4 +2,4 @@
 
 */1 * * * * /bin/echo 'date' > /dev/console
 
-*/1 * * * * /bin/sh /home/mongodb_back.sh
+0 6 * * * /bin/sh /home/mongodb_back.sh
