@@ -22,7 +22,7 @@ set -m
 # fi
 
 # 启动定时任务
-service cron start && mongod --smallfiles
+service cron start && mongod
 # cron -f
 
 fg

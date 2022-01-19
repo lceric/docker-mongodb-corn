@@ -1,4 +1,4 @@
-FROM mongo:3.3
+FROM mongo:latest
 RUN apt-get update && \
     apt-get install -y cron
 
@@ -12,7 +12,7 @@ ADD crontabfile /home/crontab
 
 RUN chmod -R 777 /data/db && \
   chmod +x /run.sh && \
-  chmod +x /entrypoint.sh && \
+  # chmod +x /entrypoint.sh && \
   chmod +x /home/mongodb_back.sh && \
   mkdir /home/backup && \
   chmod 777 /home/backup && \
