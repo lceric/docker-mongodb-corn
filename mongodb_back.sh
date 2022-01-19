@@ -21,7 +21,7 @@ mkdir -p $OUT_DIR/$DATE
 mkdir -p $TAR_DIR
 # $DUMP -h 127.0.0.1:27017 -u $DB_USER -p $DB_PASS -d dbname -o $OUT_DIR/$DATE
 # $DUMP -h 127.0.0.1:27017 -d yapi -o $OUT_DIR/$DATE
-$DUMP -h 127.0.0.1:27017 -d $BACKDBNAME -o $OUT_DIR/$DATE
+$DUMP -h 127.0.0.1:27017  -o $OUT_DIR/$DATE
 # 压缩格式为 .tar.gz 格式
 tar -zcvf $TAR_DIR/$TAR_BAK $OUT_DIR/$DATE
 # 删除 15 天前的备份文件
